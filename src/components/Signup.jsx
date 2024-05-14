@@ -24,7 +24,7 @@ const Signup = () => {
 
         <h3>Create Account</h3>
 
-        <form action="">
+        <form action="" onSubmit={(e) => e.preventDefault()}>
           <div className="input-container">
             <label>Full Name</label>
             <div>
