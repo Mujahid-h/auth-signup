@@ -1,0 +1,167 @@
+.container {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  height: 90vh;
+  margin: 5vh auto;
+  display: flex;
+  background: #e9f8e5;
+  border-radius: 20px;
+}
+
+.left {
+  width: 40%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.vector {
+  display: flex;
+  align-items: center;
+}
+
+.img {
+  display: none;
+}
+
+p {
+  margin-left: 5px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #4c4c4d;
+}
+
+form {
+  width: 70%;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 15px 0px;
+}
+
+.input-container div {
+  display: flex;
+  align-items: center;
+  outline: none;
+  border: 2px solid #a4a5a6;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.input-container div input {
+  border: none;
+  outline: none;
+  width: 90%;
+  padding-left: 10px;
+  color: #5b6262;
+}
+
+.input-container div svg {
+  color: #a4a5a6;
+  font-size: 20px;
+}
+
+.input-container label {
+  font-size: 14px;
+  color: #a4a5a6;
+  margin-bottom: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 15px;
+  border: none;
+  background: #73895d;
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+  margin-top: 10px;
+}
+
+.center {
+  text-align: center;
+}
+
+.center p {
+  color: #9e9ea3;
+  margin-top: 20px;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.apps {
+  margin: 0 5px;
+  padding: 5px;
+  border-radius: 50%;
+  border: 1px solid #a4a5a6;
+}
+
+.gray {
+  color: #9e9ea3;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+span {
+  font-weight: 800;
+  cursor: pointer;
+  color: #73895d;
+}
+
+@media (max-width: 850px) {
+  .container {
+    flex-direction: column;
+    height: fit-content;
+    background: #ffffff;
+    padding: 40px 0;
+    width: 90%;
+  }
+  .left,
+  .right {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .left img {
+    display: none;
+  }
+
+  .right {
+    box-shadow: none;
+  }
+
+  .img {
+    display: block;
+  }
+}
